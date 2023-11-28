@@ -1,0 +1,28 @@
+<h2>User Information</h2>
+<label>
+  id of the User
+  <input type="range" min="1" max="10" step="1" [value]="count()" (input)="updateCount($event)"/>
+  {{ count() }}
+</label>
+<table id="userTable">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Surname</th>
+    <th>Gender</th>
+    <th>Job</th>
+    <th>Gender</th>
+    <th>Address</th>
+    <th>Phone Number</th>
+  </tr>
+  <tr>
+    <td>{{selectedUser().id}}</td>
+    <td>{{selectedUser().name}}</td>
+    <td>{{selectedUser().surname}}</td>
+    <td>{{selectedUser().age}}</td>
+    <td>{{selectedUser().job}}</td>
+    <td>{{selectedUser().gender}}</td>
+    <td>{{selectedUser().address}}</td>
+    <td>{{selectedUser().phoneNumber}}</td>
+  </tr>
+</table>
